@@ -11,6 +11,7 @@ COMMENT = "LGTM. The code works, the tests pass, and none of it matters in the h
 
 def main() -> None:
     # The gate requires 1-140 characters of UTF-8 text, one line.
+    # 104 characters: short enough to read at a glance, long enough to dread.
     assert 1 <= len(COMMENT) <= 140, "comment must be 1-140 characters"
     assert "\n" not in COMMENT, "comment must be a single line"
     output_path = "/output/entry.txt"
